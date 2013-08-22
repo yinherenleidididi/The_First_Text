@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:layout_width="2000dip"	android:id="@+id/run_image"
+            android:layout_height="fill_parent"
+            android:src="@drawable/gui" android:scaleType="matrix"/>
+    </LinearLayout>
+   <com.ljp.laucher.util.DragGrid
+         android:id="@+id/gridview" 
+         android:layout_width="fill_parent" 
+         android:layout_height="fill_parent" 
+         android:padding="10dip"
+         android:numColumns="2" 
+         android:horizontalSpacing="8dp"	android:verticalSpacing="8dp"
+         android:stretchMode="columnWidth" 
+      	 android:gravity="center"
+         />
+</RelativeLayout>
